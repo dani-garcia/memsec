@@ -21,7 +21,7 @@ getrandom = { version = "0.2", optional = true }
 libc = { version = "0.2", optional = true }
 
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.45", default-features = false, features = [
+windows-sys = { version = ">=0.45, <=0.59", default-features = false, features = [
     "Win32_System_SystemInformation",
     "Win32_System_Memory",
     "Win32_Foundation",
